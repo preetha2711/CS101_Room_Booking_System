@@ -7,7 +7,7 @@ $first_day = mktime(0,0,0,$month,1,$year);
 $title = date('F',$first_day);
 $day_of_week = date('D', $first_day);
 
-$switch(day_of_week)
+switch($day_of_week)
 {
 	case "Sun": $blank = 0; break;
 	case "Mon": $blank = 1; break;
@@ -38,9 +38,9 @@ while
 
 $day_num = 1;
 
-while($day_num<=days_in_month)
+while($day_num<=$days_in_month)
 {
-	echo "<td> day_num </td>";
+	echo "<td> $day_num </td>";
 	$day_num++;
 	$day_count++;	
 	
