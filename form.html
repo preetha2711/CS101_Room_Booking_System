@@ -1,18 +1,41 @@
 
-<form action="/project.php" method="get">
-  First name:<br>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
-  <input type="text" name="lastname" ><br>
-  Date:<br>
-<input type = "date" name = "date" max = "2017-12-31" min = "2017-05-01" ><br>
-KIndly book your slots according to the hour<br>
-Time In:<br>
-<input type = "time" name = "time in"><br>
-Time Out: <br>
-<input type = "time" name = "time out"><br>
+<html>
+<head>
+<style>
+label{display:inline-block;width:100px;margin-bottom:10px;}
+</style>
+ 
+ 
+<title>Make Appointments</title>
+</head>
+<body>
+ 
+<form method="post" action="values.php">
+<label>Name</label>
+<input type="text" name="name" />
+<br />
 
-Instruments Used:<br>
-<input type="text" name = "instruments"><br><br>
-  <input type="submit" value="Submit">
+<label>Instruments Used</label>
+<input type="text" name="intruments" />
+<br />
+<label>Email</label>
+<input type="text" name="email" />
+<br />
+<label>Date</label>
+<input type="date" value="date"/>
+<br />
+<label>Time_in</label>
+<input type = "time" value="timein" />
+<br />
+<label>Time_Out</label>
+<input type="time" name="timeout">
+<br/>
+<br/>
+<input type="submit" value="Add Appointment">
+
 </form>
+ 
+ 
+ 
+</body>
+</html>
