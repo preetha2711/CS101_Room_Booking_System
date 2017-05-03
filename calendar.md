@@ -6,7 +6,7 @@ $year = date('y',$date);
 $first_day = mktime(0,0,0,$month,1,$year);
 $title = date('F',$first_day);
 $day_of_week = date('D', $first_day);
-
+{}
 $switch(day_of_week)
 {
 	case "Sun": $blank = 0; break;
